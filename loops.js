@@ -16,15 +16,15 @@ return ('done')
 }
 function doWhileLoop(array){
   var i = 0;
-  function incrementVariable() {
-  i = i + 1;
-  }
-    do {
-    array.pop();
-    incrementVariable();
+    function incrementVariable() {
+      i = i + 1;
+    }
+     do {
+      array.pop();
+      incrementVariable();
     
-    }while (array.length > 0 && incrementVariable())
-    return array;
-  }
+      }while (array.length > 0 && incrementVariable())
+      return array;
+ }
   
   
